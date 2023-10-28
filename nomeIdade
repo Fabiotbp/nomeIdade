@@ -1,0 +1,20 @@
+def nome_idade(): #parece
+
+
+   while True:
+    anoAtual = 2023
+    nome = input("Informe o seu nome: ")
+    try:
+        dataNasc = int(input("Informe a sua data de nascimento entre 1922 e 2023: "))
+        if(dataNasc < 1922) or (dataNasc > anoAtual):
+            print("Data de nascimento inválida. Tente novamente.")
+            continue
+
+        idade = anoAtual - dataNasc
+        print("O nome informado foi:", nome)
+        print("A data informada foi:", dataNasc)
+        print("Você completou ou completará", idade, "anos em", anoAtual, ".")
+        break
+    except ValueError:
+        print("Valor inválido. Tente novamente.")
+nome_idade()
