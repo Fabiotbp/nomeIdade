@@ -2,10 +2,10 @@ def nome_idade(): #parece
 
 
    while True:
-    anoAtual = 2023
+    anoAtual = 2022
     nome = input("Informe o seu nome: ")
     try:
-        dataNasc = int(input("Informe a sua data de nascimento entre 1922 e 2023: "))
+        dataNasc = int(input("Informe a sua data de nascimento entre 1922 e 2022: "))
         if(dataNasc < 1922) or (dataNasc > anoAtual):
             print("Data de nascimento inválida. Tente novamente.")
             continue
